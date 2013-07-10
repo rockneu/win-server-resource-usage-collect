@@ -1,9 +1,9 @@
 @echo off
 echo off
 set svrIP=10.10.123.12
-set svrPath=\\10.10.123.12\PSTools\
-set user=szgdjt\administrator
-set pass=Root@XXZX3b303
+set svrPath=\\%svrIP%\PSTools\
+set user=domainName\administrator
+set pass=passWord
 
 ::net use %svrPath% /user:%user% %pass%
 ::net use \\10.10.123.12  /user:szgdjt\administrator Root@123
