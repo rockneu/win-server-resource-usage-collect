@@ -9,13 +9,14 @@
 @echo off
 @echo Updating scripts ... ...
 
-set user=domainName\administrator
-set pass=passWord
+set user=szgdjt\administrator
+set pass=Root@XXZX3b303
 ::set basePath=D:\tech\source\batch\get_sys_resource\PSTools\
 set basePath=%cd%\
 echo basePath: %basePath%
 
 psexec @%basePath%svrlist.txt -c -f  %basePath%copyScript.bat -u %user% -p %pass%
+
 @echo Finished updating.
 
 pause
